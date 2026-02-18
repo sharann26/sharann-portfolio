@@ -1,573 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" style="scroll-behavior: smooth; scroll-padding-top: 100px;">
 <head>
-	<title>Sharann - Portfolio</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sharann Nagarajan | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    h1,
+    h2,
+    h3 {
+      font-family: 'Poppins', sans-serif;
+    }
 
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
 
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
 
-	<link rel="stylesheet" href="css/aos.css">
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
 
-	<link rel="stylesheet" href="css/ionicons.min.css">
-	<link rel="stylesheet" href="css/customicon-style.css">
-
-	<link rel="stylesheet" href="css/style.css">
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.5.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+    "three": "https://esm.sh/three@^0.182.0",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html"><span>S</span>harann</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-					<li class="nav-item"><a href="#stacks-section" class="nav-link"><span>Stacks</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section class="hero-wrap js-fullheight">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-					<div class="text text-center">
-						<span class="subheading">Hey! I am</span>
-						<h1 id="revealText">Sharann</h1>
-						<h2>I'm a (isFrontEnd ?
-							<span class="txt-rotate">Angular</span>
-							:
-							<span class="txt-rotate">Nodejs</span>
-							) Developer
-						</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex no-gutters">
-				<div class="col-md-6 col-lg-6 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/profile-img.jpg);">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 pl-md-5 py-5">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">About</h1>
-							<h2 class="mb-4">About Me</h2>
-							<p>Solving problems through strategic design</p>
-							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span> <span>Sharann</span></li>
-								<li class="d-flex"><span>Date of birth:</span> <span>September 25, 1996</span></li>
-								<li class="d-flex"><span>Address:</span> <span>3/411/12/9, JKK
-										NATARAJANAGAR, Kuppandapalayam, Kumarapalayam, Namakkal, Tamil Nadu -
-										638183</span></li>
-								<li class="d-flex"><span>Zip code:</span> <span>638183</span></li>
-								<li class="d-flex"><span>Email:</span> <span>sharann172@gmail.com</span></li>
-								<li class="d-flex"><span>Phone: </span> <span>+91-8248947601</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-							<p class="mb-4">
-								<span class="number">10+</span>
-								<span>Project complete</span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<nav id="navi">
-						<ul>
-							<li><a href="#page-1">Education</a></li>
-							<li><a href="#page-2">Experience</a></li>
-							<li><a href="#page-3">Awards</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="col-md-9">
-					<div id="page-1" class="page one">
-						<h2 class="heading">Education</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="ion-ios-school"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2018</span>
-								<h2>Bachelor of Science in Computer Science</h2>
-								<span class="position">Erode Sengunthar Engineering College</span>
-								<p>CGPA - 6.8</p>
-							</div>
-						</div>
-					</div>
-
-					<div id="page-2" class="page two">
-						<h2 class="heading">Experience</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="ion-ios-business"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">Dec 2023-Present</span>
-								<h2>Technology Lead</h2>
-								<span class="position">Infosys Limited</span>
-								<p>Working as part of the web development expertise team analyzing, understanding the
-									customer problems and approaching them with perfect UI design and converting them
-									into real world full functional web applications and achieve high performance user
-									experience.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="ion-ios-business"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">May 2021 - Jul 2023</span>
-								<h2>Senior Data Analyst</h2>
-								<span class="position">Chainsys India Private Limited</span>
-								<p>Working as part of the product and project development expertise team for analyzing,
-									understanding the customer problems and approaching them with perfect UI design and
-									requirements and converting them into application.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="ion-ios-business"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">May 2018 - May 2021</span>
-								<h2>Software Engineer</h2>
-								<span class="position">GoDB Tech Private Limited</span>
-								<p>Working as part of the web development expertise team analyzing, understanding the
-									customer problems and and achieve high performance user experience.</p>
-							</div>
-						</div>
-					</div>
-					<div id="page-3" class="page three">
-						<h2 class="heading">Awards</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="ion-ios-trophy"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2025</span>
-								<h2>Microsoft Power BI</h2>
-								<span class="position">Skill Nation</span>
-								<p>Enables professionals to analyze large datasets and create interactive reports and
-									dashboards</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section" id="stacks-section">
-		<div class="container-fluid px-md-5">
-			<div class="row justify-content-center py-5 mt-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">My Stacks</h1>
-					<h2 class="mb-4">My Stacks</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="ion-logo-angular"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Angular</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="ion-logo-nodejs"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Nodejs</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="ion-logo-ionic"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Ionic</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="ion-logo-html5"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">HTML</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="ion-logo-css3"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">CSS</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="icon-typescript"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Typescript</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="icon-mysql"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">MySQL</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="icon-couchdb"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">CouchDB</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="icon-powerbi"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Microsoft Power BI</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="icon-vs-code"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">VS Code</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="ion-logo-github"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Git</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow">
-						<span class="icon">
-							<i class="icon-jira"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">JIRA</h3>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="ftco-section ftco-project" id="projects-section">
-		<div class="container-fluid px-md-0">
-			<div class="row no-gutters justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">My Projects</h1>
-					<h2 class="mb-4">My Projects</h2>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row gy-4">
-					<div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
-						<div class="service-item position-relative">
-							<a class="stretched-link">
-								<h3>Navigator - United Airlines</h3>
-							</a>
-							<p>
-								In this application, we built a flight booking system with features like luxury seat
-								availability and pet-friendly booking. It also lists flights from partner agents like
-								AirGo to offer more travel options. I focused on creating a seamless and user-friendly
-								booking experience.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
-						<div class="service-item position-relative">
-							<a class="stretched-link">
-								<h3>TOPS - Capital Groups</h3>
-							</a>
-							<p>
-								This application provides a comprehensive report of share stocks for all companies. It
-								enables users to
-								access real-time and historical stock data, track market trends, and analyze company
-								performances
-								efficiently. The platform presents stock details in an intuitive format. Designed for
-								ease of use, this
-								application is ideal for traders, analysts, and financial enthusiasts seeking a clear
-								overview of the stock market.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="200">
-						<div class="service-item position-relative">
-							<a class="stretched-link">
-								<h3>SmartApp Builder</h3>
-							</a>
-							<p>
-								This product is for creating dynamic applications and also dynamic pages through click
-								and drag action.
-								Initially we create one object with required fields and by using the object we create
-								the layouts for
-								entry, view and list pages. Final outcome for the application suitable for both web and
-								mobile.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="300">
-						<div class="service-item position-relative">
-							<a class="stretched-link">
-								<h3>Hatsun Service Ticket</h3>
-							</a>
-							<p>
-								This application creates tickets with complaints by customers and that complaint is
-								resolved by the
-								respective MSP (maintenance service provider) admin about farmers in 6 Indian languages.
-								The ticketing
-								application has a well-designed UI and advanced image-loading techniques. Both two
-								mobile applications
-								have their own web portals to upload data and view report pages. This application is
-								available in the
-								playstore.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="300">
-						<div class="service-item position-relative">
-							<a class="stretched-link">
-								<h3>Alliance insurance</h3>
-							</a>
-							<p>
-								In this project, I contributed to the development of a Vehicle Loan Policy Details entry
-								page. I worked closely with the team to design an intuitive and user-friendly interface.
-								My key role involved capturing user input accurately and securely. I implemented
-								encryption mechanisms to protect sensitive data during transmission. The encrypted data
-								was then sent to the server for further processing and validation.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="300">
-						<div class="service-item position-relative">
-							<a class="stretched-link">
-								<h3>Tata AIG general</h3>
-							</a>
-							<p>
-								In this application, I collaborated with the team to design and implement the Home Loan
-								Policy Details entry page. My primary responsibility was to ensure secure data handling
-								by encrypting user inputs before transmission. Together, we integrated the frontend with
-								the backend services to enable seamless and secure data submission to the server.
-							</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container-fluid px-md-5">
-			<div class="row d-md-flex align-items-center">
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number">10+</strong>
-							<span>Happy Customers</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number">10+</strong>
-							<span>Complete Projects</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number">6+</strong>
-							<span>Years of Experience</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Contact</h1>
-					<h2 class="mb-4">Contact Me</h2>
-				</div>
-			</div>
-
-			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-12 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="ion-ios-pin"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Address</h3>
-							<a href="https://maps.app.goo.gl/uYAmo15j3xFNdnen9" target="_blank">3/411/12/9, JKK
-								NATARAJANAGAR, Kuppandapalayam, Kumarapalayam, Namakkal, Tamil Nadu -
-								638183</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="ion-ios-person"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Contact Number</h3>
-							<p>+91 8248947601</p>
-						</div>
-						<div class='space-x-5'>
-							<a href="tel://918248947601">
-								<span
-									class="badge whitespace-nowrap mb-2 inline-block text-sm bg-violet-50 hover:bg-violet-100 text-violet-900 border border-violet-100 py-1 px-3 rounded-full transition-all">
-									<i class="ion-ios-call phoneIconCss"></i>
-									<span>Call</span>
-								</span>
-							</a>
-							<a href="https://wa.me/918248947601">
-								<span
-									class="badge whitespace-nowrap mb-2 inline-block text-sm bg-violet-50 hover:bg-violet-100 text-violet-900 border border-violet-100 py-1 px-3 rounded-full transition-all">
-									<i class="ion-logo-whatsapp whatsAppIconCss"></i>
-									<span>WhatsApp</span>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="ion-ios-mail"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Email Address</h3>
-							<p><a href="mailto:sharann172@gmail.com">sharann172@gmail.com</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="ion-logo-linkedin"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">LinkedIn</h3>
-							<p><a href="https://www.linkedin.com/in/sharann-n/" target="_blank">sharann-n</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
-
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-
-	<script src="js/main.js"></script>
-
+<body class="bg-white dark:bg-[#050816] text-slate-900 dark:text-white transition-colors duration-1000">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
