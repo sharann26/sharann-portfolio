@@ -7,6 +7,7 @@ import {
   Stat,
 } from "./types";
 
+export const CHATBOT_ENABLED: boolean = true; // May 17, 2018
 // Define your career start date (Year, Month Index (0-11), Day)
 const START_DATE = new Date(2018, 4, 17); // May 17, 2018
 
@@ -38,7 +39,7 @@ export const CONTACT_INFO = {
   whatsapp: "+918248947601",
   email: "sharann172@gmail.com",
   linkedin: "https://linkedin.com/in/sharann-n",
-}; 
+};
 
 export const EXPERIENCES: Experience[] = [
   {
