@@ -1,6 +1,6 @@
 import { Chat, GoogleGenAI } from "@google/genai";
 import { AnimatePresence, motion } from "framer-motion";
-import { Bot, Loader2, Send, Sparkles, User, X } from "lucide-react";
+import { Bot, Loader2, Send, User, X } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import {
   CERTIFICATIONS,
@@ -126,10 +126,10 @@ const ChatBot: React.FC = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-24 right-8 z-[101] p-4 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 transition-all flex items-center justify-center"
+        className="fixed bottom-4 right-8 z-[101] p-4 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white shadow-2xl shadow-violet-500/30 hover:shadow-violet-500/50 transition-all flex items-center justify-center"
         aria-label="Open Chat"
       >
-        {isOpen ? <X size={24} /> : <Sparkles size={24} />}
+        {isOpen ? <X size={24} /> : <Bot size={24} />}
       </motion.button>
 
       {/* Chat Window */}
@@ -139,7 +139,7 @@ const ChatBot: React.FC = () => {
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.9 }}
-            className="fixed bottom-40 right-4 sm:right-8 w-[calc(100vw-2rem)] sm:w-96 h-[500px] max-h-[60vh] z-[100] bg-white/95 dark:bg-slate-900/95 backdrop-blur-2xl border border-slate-200 dark:border-white/10 rounded-3xl shadow-2xl flex flex-col overflow-hidden"
+            className="fixed bottom-20 right-4 sm:right-8 w-[calc(100vw-2rem)] sm:w-96 h-[500px] max-h-[60vh] z-[100] bg-white/95 dark:bg-slate-900/95 backdrop-blur-2xl border border-slate-200 dark:border-white/10 rounded-3xl shadow-2xl flex flex-col overflow-hidden"
           >
             {/* Header */}
             <div className="p-4 border-b border-slate-200 dark:border-white/10 bg-gradient-to-r from-violet-600/10 to-fuchsia-600/10 flex items-center justify-between">
