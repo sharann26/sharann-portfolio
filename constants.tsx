@@ -34,11 +34,11 @@ const calculateExperience = (startDateStr): string => {
 
 // Replace with actual contact info or keep as placeholders
 export const CONTACT_INFO = {
-  phone: "+91824894",
-  whatsapp: "+919876543210",
+  phone: "+918248947601",
+  whatsapp: "+918248947601",
   email: "sharann172@gmail.com",
   linkedin: "https://linkedin.com/in/sharann-n",
-};
+}; 
 
 export const EXPERIENCES: Experience[] = [
   {
